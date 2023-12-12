@@ -30,8 +30,6 @@ function shuffle(array) {
   return array;
 }
 
-let shuffledColors = shuffle(COLORS);
-
 function createDivsForColors(colorArray) {
   for (let color of colorArray) {
     const newDiv = document.createElement("div");
@@ -82,4 +80,5 @@ function handleCardClick(e) {
   if (cardsFlipped === COLORS.length) alert("Congrats! You beat the game!");
 }
 
+let shuffledColors = shuffle(COLORS);
 createDivsForColors(shuffledColors);
